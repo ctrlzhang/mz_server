@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/data/developer/work/mz_server/src/util/../include/mz_common.h
+stdint.h
+-
+unistd.h
+-
+iostream
+-
+
+/data/developer/work/mz_server/src/util/../include/mz_daemon.h
+mz_common.h
+/data/developer/work/mz_server/src/util/../include/mz_common.h
+
+/data/developer/work/mz_server/src/util/mz_daemon.cpp
+../include/mz_daemon.h
+/data/developer/work/mz_server/src/util/../include/mz_daemon.h
+

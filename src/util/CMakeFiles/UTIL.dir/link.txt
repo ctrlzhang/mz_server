@@ -1,0 +1,2 @@
+/bin/ar cr libUTIL.a  CMakeFiles/UTIL.dir/mz_daemon.cpp.o CMakeFiles/UTIL.dir/mz_option_parser.cpp.o
+/bin/ranlib libUTIL.a

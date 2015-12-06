@@ -1,0 +1,1 @@
+/bin/c++   -Wall -Wextra -Werror -Wno-unused-parameter -Wno-deprecated  -rdynamic -Wl,-Bstatic -Wl,-Bdynamic -lstdc++ -lpthread -ldl CMakeFiles/mz_server.dir/mz_server.cpp.o  -o mz_server -rdynamic util/libmzutil.a framework/libmzframework.a util/libmzutil.a 

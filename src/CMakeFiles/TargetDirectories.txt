@@ -1,0 +1,3 @@
+/data/developer/work/mz_server/src/CMakeFiles/mz_server.dir
+/data/developer/work/mz_server/src/framework/CMakeFiles/mzframework.dir
+/data/developer/work/mz_server/src/util/CMakeFiles/mzutil.dir

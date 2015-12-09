@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data/developer/work/mz_server/src
+CMAKE_SOURCE_DIR = /data/developer/work/mz_server/mz_server/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/developer/work/mz_server/src
+CMAKE_BINARY_DIR = /data/developer/work/mz_server/mz_server/src
 
 # Include any dependencies generated for this target.
 include util/CMakeFiles/mzutil.dir/depend.make
@@ -52,19 +52,42 @@ include util/CMakeFiles/mzutil.dir/progress.make
 # Include the compile flags for this target's objects.
 include util/CMakeFiles/mzutil.dir/flags.make
 
+util/CMakeFiles/mzutil.dir/mz_eventloop.cpp.o: util/CMakeFiles/mzutil.dir/flags.make
+util/CMakeFiles/mzutil.dir/mz_eventloop.cpp.o: util/mz_eventloop.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /data/developer/work/mz_server/mz_server/src/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object util/CMakeFiles/mzutil.dir/mz_eventloop.cpp.o"
+	cd /data/developer/work/mz_server/mz_server/src/util && /bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/mzutil.dir/mz_eventloop.cpp.o -c /data/developer/work/mz_server/mz_server/src/util/mz_eventloop.cpp
+
+util/CMakeFiles/mzutil.dir/mz_eventloop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mzutil.dir/mz_eventloop.cpp.i"
+	cd /data/developer/work/mz_server/mz_server/src/util && /bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/developer/work/mz_server/mz_server/src/util/mz_eventloop.cpp > CMakeFiles/mzutil.dir/mz_eventloop.cpp.i
+
+util/CMakeFiles/mzutil.dir/mz_eventloop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mzutil.dir/mz_eventloop.cpp.s"
+	cd /data/developer/work/mz_server/mz_server/src/util && /bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/developer/work/mz_server/mz_server/src/util/mz_eventloop.cpp -o CMakeFiles/mzutil.dir/mz_eventloop.cpp.s
+
+util/CMakeFiles/mzutil.dir/mz_eventloop.cpp.o.requires:
+.PHONY : util/CMakeFiles/mzutil.dir/mz_eventloop.cpp.o.requires
+
+util/CMakeFiles/mzutil.dir/mz_eventloop.cpp.o.provides: util/CMakeFiles/mzutil.dir/mz_eventloop.cpp.o.requires
+	$(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/mz_eventloop.cpp.o.provides.build
+.PHONY : util/CMakeFiles/mzutil.dir/mz_eventloop.cpp.o.provides
+
+util/CMakeFiles/mzutil.dir/mz_eventloop.cpp.o.provides.build: util/CMakeFiles/mzutil.dir/mz_eventloop.cpp.o
+
 util/CMakeFiles/mzutil.dir/mz_daemon.cpp.o: util/CMakeFiles/mzutil.dir/flags.make
 util/CMakeFiles/mzutil.dir/mz_daemon.cpp.o: util/mz_daemon.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /data/developer/work/mz_server/src/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /data/developer/work/mz_server/mz_server/src/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object util/CMakeFiles/mzutil.dir/mz_daemon.cpp.o"
-	cd /data/developer/work/mz_server/src/util && /bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/mzutil.dir/mz_daemon.cpp.o -c /data/developer/work/mz_server/src/util/mz_daemon.cpp
+	cd /data/developer/work/mz_server/mz_server/src/util && /bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/mzutil.dir/mz_daemon.cpp.o -c /data/developer/work/mz_server/mz_server/src/util/mz_daemon.cpp
 
 util/CMakeFiles/mzutil.dir/mz_daemon.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mzutil.dir/mz_daemon.cpp.i"
-	cd /data/developer/work/mz_server/src/util && /bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/developer/work/mz_server/src/util/mz_daemon.cpp > CMakeFiles/mzutil.dir/mz_daemon.cpp.i
+	cd /data/developer/work/mz_server/mz_server/src/util && /bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/developer/work/mz_server/mz_server/src/util/mz_daemon.cpp > CMakeFiles/mzutil.dir/mz_daemon.cpp.i
 
 util/CMakeFiles/mzutil.dir/mz_daemon.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mzutil.dir/mz_daemon.cpp.s"
-	cd /data/developer/work/mz_server/src/util && /bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/developer/work/mz_server/src/util/mz_daemon.cpp -o CMakeFiles/mzutil.dir/mz_daemon.cpp.s
+	cd /data/developer/work/mz_server/mz_server/src/util && /bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/developer/work/mz_server/mz_server/src/util/mz_daemon.cpp -o CMakeFiles/mzutil.dir/mz_daemon.cpp.s
 
 util/CMakeFiles/mzutil.dir/mz_daemon.cpp.o.requires:
 .PHONY : util/CMakeFiles/mzutil.dir/mz_daemon.cpp.o.requires
@@ -77,17 +100,17 @@ util/CMakeFiles/mzutil.dir/mz_daemon.cpp.o.provides.build: util/CMakeFiles/mzuti
 
 util/CMakeFiles/mzutil.dir/mz_option_parser.cpp.o: util/CMakeFiles/mzutil.dir/flags.make
 util/CMakeFiles/mzutil.dir/mz_option_parser.cpp.o: util/mz_option_parser.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /data/developer/work/mz_server/src/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /data/developer/work/mz_server/mz_server/src/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object util/CMakeFiles/mzutil.dir/mz_option_parser.cpp.o"
-	cd /data/developer/work/mz_server/src/util && /bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/mzutil.dir/mz_option_parser.cpp.o -c /data/developer/work/mz_server/src/util/mz_option_parser.cpp
+	cd /data/developer/work/mz_server/mz_server/src/util && /bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/mzutil.dir/mz_option_parser.cpp.o -c /data/developer/work/mz_server/mz_server/src/util/mz_option_parser.cpp
 
 util/CMakeFiles/mzutil.dir/mz_option_parser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mzutil.dir/mz_option_parser.cpp.i"
-	cd /data/developer/work/mz_server/src/util && /bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/developer/work/mz_server/src/util/mz_option_parser.cpp > CMakeFiles/mzutil.dir/mz_option_parser.cpp.i
+	cd /data/developer/work/mz_server/mz_server/src/util && /bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/developer/work/mz_server/mz_server/src/util/mz_option_parser.cpp > CMakeFiles/mzutil.dir/mz_option_parser.cpp.i
 
 util/CMakeFiles/mzutil.dir/mz_option_parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mzutil.dir/mz_option_parser.cpp.s"
-	cd /data/developer/work/mz_server/src/util && /bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/developer/work/mz_server/src/util/mz_option_parser.cpp -o CMakeFiles/mzutil.dir/mz_option_parser.cpp.s
+	cd /data/developer/work/mz_server/mz_server/src/util && /bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/developer/work/mz_server/mz_server/src/util/mz_option_parser.cpp -o CMakeFiles/mzutil.dir/mz_option_parser.cpp.s
 
 util/CMakeFiles/mzutil.dir/mz_option_parser.cpp.o.requires:
 .PHONY : util/CMakeFiles/mzutil.dir/mz_option_parser.cpp.o.requires
@@ -98,35 +121,90 @@ util/CMakeFiles/mzutil.dir/mz_option_parser.cpp.o.provides: util/CMakeFiles/mzut
 
 util/CMakeFiles/mzutil.dir/mz_option_parser.cpp.o.provides.build: util/CMakeFiles/mzutil.dir/mz_option_parser.cpp.o
 
+util/CMakeFiles/mzutil.dir/mz_log.cpp.o: util/CMakeFiles/mzutil.dir/flags.make
+util/CMakeFiles/mzutil.dir/mz_log.cpp.o: util/mz_log.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /data/developer/work/mz_server/mz_server/src/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object util/CMakeFiles/mzutil.dir/mz_log.cpp.o"
+	cd /data/developer/work/mz_server/mz_server/src/util && /bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/mzutil.dir/mz_log.cpp.o -c /data/developer/work/mz_server/mz_server/src/util/mz_log.cpp
+
+util/CMakeFiles/mzutil.dir/mz_log.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mzutil.dir/mz_log.cpp.i"
+	cd /data/developer/work/mz_server/mz_server/src/util && /bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/developer/work/mz_server/mz_server/src/util/mz_log.cpp > CMakeFiles/mzutil.dir/mz_log.cpp.i
+
+util/CMakeFiles/mzutil.dir/mz_log.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mzutil.dir/mz_log.cpp.s"
+	cd /data/developer/work/mz_server/mz_server/src/util && /bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/developer/work/mz_server/mz_server/src/util/mz_log.cpp -o CMakeFiles/mzutil.dir/mz_log.cpp.s
+
+util/CMakeFiles/mzutil.dir/mz_log.cpp.o.requires:
+.PHONY : util/CMakeFiles/mzutil.dir/mz_log.cpp.o.requires
+
+util/CMakeFiles/mzutil.dir/mz_log.cpp.o.provides: util/CMakeFiles/mzutil.dir/mz_log.cpp.o.requires
+	$(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/mz_log.cpp.o.provides.build
+.PHONY : util/CMakeFiles/mzutil.dir/mz_log.cpp.o.provides
+
+util/CMakeFiles/mzutil.dir/mz_log.cpp.o.provides.build: util/CMakeFiles/mzutil.dir/mz_log.cpp.o
+
+util/CMakeFiles/mzutil.dir/test.cpp.o: util/CMakeFiles/mzutil.dir/flags.make
+util/CMakeFiles/mzutil.dir/test.cpp.o: util/test.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /data/developer/work/mz_server/mz_server/src/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object util/CMakeFiles/mzutil.dir/test.cpp.o"
+	cd /data/developer/work/mz_server/mz_server/src/util && /bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/mzutil.dir/test.cpp.o -c /data/developer/work/mz_server/mz_server/src/util/test.cpp
+
+util/CMakeFiles/mzutil.dir/test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mzutil.dir/test.cpp.i"
+	cd /data/developer/work/mz_server/mz_server/src/util && /bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/developer/work/mz_server/mz_server/src/util/test.cpp > CMakeFiles/mzutil.dir/test.cpp.i
+
+util/CMakeFiles/mzutil.dir/test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mzutil.dir/test.cpp.s"
+	cd /data/developer/work/mz_server/mz_server/src/util && /bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/developer/work/mz_server/mz_server/src/util/test.cpp -o CMakeFiles/mzutil.dir/test.cpp.s
+
+util/CMakeFiles/mzutil.dir/test.cpp.o.requires:
+.PHONY : util/CMakeFiles/mzutil.dir/test.cpp.o.requires
+
+util/CMakeFiles/mzutil.dir/test.cpp.o.provides: util/CMakeFiles/mzutil.dir/test.cpp.o.requires
+	$(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/test.cpp.o.provides.build
+.PHONY : util/CMakeFiles/mzutil.dir/test.cpp.o.provides
+
+util/CMakeFiles/mzutil.dir/test.cpp.o.provides.build: util/CMakeFiles/mzutil.dir/test.cpp.o
+
 # Object files for target mzutil
 mzutil_OBJECTS = \
+"CMakeFiles/mzutil.dir/mz_eventloop.cpp.o" \
 "CMakeFiles/mzutil.dir/mz_daemon.cpp.o" \
-"CMakeFiles/mzutil.dir/mz_option_parser.cpp.o"
+"CMakeFiles/mzutil.dir/mz_option_parser.cpp.o" \
+"CMakeFiles/mzutil.dir/mz_log.cpp.o" \
+"CMakeFiles/mzutil.dir/test.cpp.o"
 
 # External object files for target mzutil
 mzutil_EXTERNAL_OBJECTS =
 
+util/libmzutil.a: util/CMakeFiles/mzutil.dir/mz_eventloop.cpp.o
 util/libmzutil.a: util/CMakeFiles/mzutil.dir/mz_daemon.cpp.o
 util/libmzutil.a: util/CMakeFiles/mzutil.dir/mz_option_parser.cpp.o
+util/libmzutil.a: util/CMakeFiles/mzutil.dir/mz_log.cpp.o
+util/libmzutil.a: util/CMakeFiles/mzutil.dir/test.cpp.o
 util/libmzutil.a: util/CMakeFiles/mzutil.dir/build.make
 util/libmzutil.a: util/CMakeFiles/mzutil.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library libmzutil.a"
-	cd /data/developer/work/mz_server/src/util && $(CMAKE_COMMAND) -P CMakeFiles/mzutil.dir/cmake_clean_target.cmake
-	cd /data/developer/work/mz_server/src/util && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mzutil.dir/link.txt --verbose=$(VERBOSE)
+	cd /data/developer/work/mz_server/mz_server/src/util && $(CMAKE_COMMAND) -P CMakeFiles/mzutil.dir/cmake_clean_target.cmake
+	cd /data/developer/work/mz_server/mz_server/src/util && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mzutil.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 util/CMakeFiles/mzutil.dir/build: util/libmzutil.a
 .PHONY : util/CMakeFiles/mzutil.dir/build
 
+util/CMakeFiles/mzutil.dir/requires: util/CMakeFiles/mzutil.dir/mz_eventloop.cpp.o.requires
 util/CMakeFiles/mzutil.dir/requires: util/CMakeFiles/mzutil.dir/mz_daemon.cpp.o.requires
 util/CMakeFiles/mzutil.dir/requires: util/CMakeFiles/mzutil.dir/mz_option_parser.cpp.o.requires
+util/CMakeFiles/mzutil.dir/requires: util/CMakeFiles/mzutil.dir/mz_log.cpp.o.requires
+util/CMakeFiles/mzutil.dir/requires: util/CMakeFiles/mzutil.dir/test.cpp.o.requires
 .PHONY : util/CMakeFiles/mzutil.dir/requires
 
 util/CMakeFiles/mzutil.dir/clean:
-	cd /data/developer/work/mz_server/src/util && $(CMAKE_COMMAND) -P CMakeFiles/mzutil.dir/cmake_clean.cmake
+	cd /data/developer/work/mz_server/mz_server/src/util && $(CMAKE_COMMAND) -P CMakeFiles/mzutil.dir/cmake_clean.cmake
 .PHONY : util/CMakeFiles/mzutil.dir/clean
 
 util/CMakeFiles/mzutil.dir/depend:
-	cd /data/developer/work/mz_server/src && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data/developer/work/mz_server/src /data/developer/work/mz_server/src/util /data/developer/work/mz_server/src /data/developer/work/mz_server/src/util /data/developer/work/mz_server/src/util/CMakeFiles/mzutil.dir/DependInfo.cmake --color=$(COLOR)
+	cd /data/developer/work/mz_server/mz_server/src && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data/developer/work/mz_server/mz_server/src /data/developer/work/mz_server/mz_server/src/util /data/developer/work/mz_server/mz_server/src /data/developer/work/mz_server/mz_server/src/util /data/developer/work/mz_server/mz_server/src/util/CMakeFiles/mzutil.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : util/CMakeFiles/mzutil.dir/depend
 

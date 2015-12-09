@@ -6,31 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/data/developer/work/mz_server/src/util/../include/cmdline.h
-iostream
--
-sstream
--
-vector
--
-map
--
-string
--
-stdexcept
--
-typeinfo
--
-cstring
--
-algorithm
--
-cxxabi.h
--
-cstdlib
--
-
-/data/developer/work/mz_server/src/util/../include/mz_common.h
+/data/developer/work/mz_server/mz_server/src/util/../include/mz_common.h
 stdint.h
 -
 unistd.h
@@ -38,25 +14,33 @@ unistd.h
 iostream
 -
 
-/data/developer/work/mz_server/src/util/../include/mz_daemon.h
+/data/developer/work/mz_server/mz_server/src/util/../include/mz_file.h
 mz_common.h
-/data/developer/work/mz_server/src/util/../include/mz_common.h
+/data/developer/work/mz_server/mz_server/src/util/../include/mz_common.h
+fstream
+-
 
-/data/developer/work/mz_server/src/util/../include/mz_option_parser.h
+/data/developer/work/mz_server/mz_server/src/util/../include/mz_log.h
 mz_common.h
-/data/developer/work/mz_server/src/util/../include/mz_common.h
-cmdline.h
-/data/developer/work/mz_server/src/util/../include/cmdline.h
+/data/developer/work/mz_server/mz_server/src/util/../include/mz_common.h
+mz_singleton.h
+/data/developer/work/mz_server/mz_server/src/util/../include/mz_singleton.h
 
-/data/developer/work/mz_server/src/util/mz_daemon.cpp
-../include/mz_daemon.h
-/data/developer/work/mz_server/src/util/../include/mz_daemon.h
+/data/developer/work/mz_server/mz_server/src/util/../include/mz_singleton.h
+stdlib.h
+-
 
-/data/developer/work/mz_server/src/util/mz_option_parser.cpp
-../include/mz_option_parser.h
-/data/developer/work/mz_server/src/util/../include/mz_option_parser.h
-unistd.h
-/data/developer/work/mz_server/src/util/unistd.h
+/data/developer/work/mz_server/mz_server/src/util/mz_log.cpp
+../include/mz_log.h
+/data/developer/work/mz_server/mz_server/src/util/../include/mz_log.h
+../include/mz_file.h
+/data/developer/work/mz_server/mz_server/src/util/../include/mz_file.h
 string.h
 -
+
+/data/developer/work/mz_server/mz_server/src/util/test.cpp
+../include/mz_log.h
+/data/developer/work/mz_server/mz_server/src/util/../include/mz_log.h
+../include/mz_singleton.h
+/data/developer/work/mz_server/mz_server/src/util/../include/mz_singleton.h
 

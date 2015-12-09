@@ -50,20 +50,19 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data/developer/work/mz_server/src
+CMAKE_SOURCE_DIR = /data/developer/work/mz_server/mz_server/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/developer/work/mz_server/src
+CMAKE_BINARY_DIR = /data/developer/work/mz_server/mz_server/src
 
 #=============================================================================
 # Target rules for target CMakeFiles/mz_server.dir
 
 # All Build rule for target.
 CMakeFiles/mz_server.dir/all: util/CMakeFiles/mzutil.dir/all
-CMakeFiles/mz_server.dir/all: framework/CMakeFiles/mzframework.dir/all
 	$(MAKE) -f CMakeFiles/mz_server.dir/build.make CMakeFiles/mz_server.dir/depend
 	$(MAKE) -f CMakeFiles/mz_server.dir/build.make CMakeFiles/mz_server.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /data/developer/work/mz_server/src/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /data/developer/work/mz_server/mz_server/src/CMakeFiles  1 2
 	@echo "Built target mz_server"
 .PHONY : CMakeFiles/mz_server.dir/all
 
@@ -73,9 +72,9 @@ all: CMakeFiles/mz_server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mz_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/developer/work/mz_server/src/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/developer/work/mz_server/mz_server/src/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mz_server.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/developer/work/mz_server/src/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/developer/work/mz_server/mz_server/src/CMakeFiles 0
 .PHONY : CMakeFiles/mz_server.dir/rule
 
 # Convenience name for target.
@@ -113,7 +112,7 @@ util/preinstall:
 util/CMakeFiles/mzutil.dir/all:
 	$(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/depend
 	$(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /data/developer/work/mz_server/src/CMakeFiles  3 4
+	$(CMAKE_COMMAND) -E cmake_progress_report /data/developer/work/mz_server/mz_server/src/CMakeFiles  3 4 5 6 7
 	@echo "Built target mzutil"
 .PHONY : util/CMakeFiles/mzutil.dir/all
 
@@ -123,9 +122,9 @@ all: util/CMakeFiles/mzutil.dir/all
 
 # Build rule for subdir invocation for target.
 util/CMakeFiles/mzutil.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/developer/work/mz_server/src/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/developer/work/mz_server/mz_server/src/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 util/CMakeFiles/mzutil.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/developer/work/mz_server/src/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/developer/work/mz_server/mz_server/src/CMakeFiles 0
 .PHONY : util/CMakeFiles/mzutil.dir/rule
 
 # Convenience name for target.
@@ -139,56 +138,6 @@ util/CMakeFiles/mzutil.dir/clean:
 
 # clean rule for target.
 clean: util/CMakeFiles/mzutil.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory framework
-
-# Convenience name for "all" pass in the directory.
-framework/all: framework/CMakeFiles/mzframework.dir/all
-.PHONY : framework/all
-
-# Convenience name for "clean" pass in the directory.
-framework/clean: framework/CMakeFiles/mzframework.dir/clean
-.PHONY : framework/clean
-
-# Convenience name for "preinstall" pass in the directory.
-framework/preinstall:
-.PHONY : framework/preinstall
-
-#=============================================================================
-# Target rules for target framework/CMakeFiles/mzframework.dir
-
-# All Build rule for target.
-framework/CMakeFiles/mzframework.dir/all: util/CMakeFiles/mzutil.dir/all
-	$(MAKE) -f framework/CMakeFiles/mzframework.dir/build.make framework/CMakeFiles/mzframework.dir/depend
-	$(MAKE) -f framework/CMakeFiles/mzframework.dir/build.make framework/CMakeFiles/mzframework.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /data/developer/work/mz_server/src/CMakeFiles  2
-	@echo "Built target mzframework"
-.PHONY : framework/CMakeFiles/mzframework.dir/all
-
-# Include target in all.
-all: framework/CMakeFiles/mzframework.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-framework/CMakeFiles/mzframework.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/developer/work/mz_server/src/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 framework/CMakeFiles/mzframework.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/developer/work/mz_server/src/CMakeFiles 0
-.PHONY : framework/CMakeFiles/mzframework.dir/rule
-
-# Convenience name for target.
-mzframework: framework/CMakeFiles/mzframework.dir/rule
-.PHONY : mzframework
-
-# clean rule for target.
-framework/CMakeFiles/mzframework.dir/clean:
-	$(MAKE) -f framework/CMakeFiles/mzframework.dir/build.make framework/CMakeFiles/mzframework.dir/clean
-.PHONY : framework/CMakeFiles/mzframework.dir/clean
-
-# clean rule for target.
-clean: framework/CMakeFiles/mzframework.dir/clean
 .PHONY : clean
 
 #=============================================================================

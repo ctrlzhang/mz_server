@@ -1,5 +1,6 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/mz_server.dir/mz_server.cpp.o"
+  "CMakeFiles/mz_server.dir/mz_application.cpp.o"
   "mz_server.pdb"
   "mz_server"
 )

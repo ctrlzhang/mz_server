@@ -16,6 +16,24 @@ namespace Meizhi
 
 	//pFunc type
 	typedef int32_t (*pFunc) (stMzContextPtr);
+    
+    //open mode
+    enum OpenMode
+    {
+        OPEN_MODE_R,
+        OPEN_MODE_W,
+        OPEN_MODE_RW,
+        OPEN_MODE_APP,
+    };
+
+    //log level
+    enum LogLevel
+    {
+        LOG_LEVEL_INFO,
+        LOG_LEVEL_DEBUG,
+        LOG_LEVEL_WARN,
+        LOG_LEVEL_ERROR,
+    };
 }
 
 #endif

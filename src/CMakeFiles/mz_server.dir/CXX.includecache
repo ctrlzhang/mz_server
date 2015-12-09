@@ -6,3 +6,35 @@
 
 #IncludeRegexTransform: 
 
+/data/developer/work/mz_server/mz_server/src/include/mz_common.h
+stdint.h
+-
+unistd.h
+-
+iostream
+-
+
+/data/developer/work/mz_server/mz_server/src/include/mz_file.h
+mz_common.h
+/data/developer/work/mz_server/mz_server/src/include/mz_common.h
+fstream
+-
+
+/data/developer/work/mz_server/mz_server/src/include/mz_log.h
+mz_common.h
+/data/developer/work/mz_server/mz_server/src/include/mz_common.h
+mz_singleton.h
+/data/developer/work/mz_server/mz_server/src/include/mz_singleton.h
+
+/data/developer/work/mz_server/mz_server/src/include/mz_singleton.h
+stdlib.h
+-
+
+/data/developer/work/mz_server/mz_server/src/mz_server.cpp
+include/mz_singleton.h
+/data/developer/work/mz_server/mz_server/src/include/mz_singleton.h
+include/mz_log.h
+/data/developer/work/mz_server/mz_server/src/include/mz_log.h
+include/mz_file.h
+/data/developer/work/mz_server/mz_server/src/include/mz_file.h
+

@@ -1,2 +1,2 @@
-/bin/ar cr libmzutil.a  CMakeFiles/mzutil.dir/mz_daemon.cpp.o CMakeFiles/mzutil.dir/mz_option_parser.cpp.o
+/bin/ar cr libmzutil.a  CMakeFiles/mzutil.dir/mz_eventloop.cpp.o CMakeFiles/mzutil.dir/mz_daemon.cpp.o CMakeFiles/mzutil.dir/mz_option_parser.cpp.o CMakeFiles/mzutil.dir/mz_log.cpp.o CMakeFiles/mzutil.dir/test.cpp.o
 /bin/ranlib libmzutil.a

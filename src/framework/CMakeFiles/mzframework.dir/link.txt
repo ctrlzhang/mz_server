@@ -1,2 +1,0 @@
-/bin/ar cr libmzframework.a  CMakeFiles/mzframework.dir/mz_application.cpp.o
-/bin/ranlib libmzframework.a

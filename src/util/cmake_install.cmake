@@ -1,4 +1,4 @@
-# Install script for directory: /data/developer/work/mz_server/src/util
+# Install script for directory: /data/developer/work/mz_server/mz_server/src/util
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)

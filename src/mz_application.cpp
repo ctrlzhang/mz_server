@@ -1,4 +1,4 @@
-#include "../include/mz_application.h"
+#include "include/mz_application.h"
 
 namespace Meizhi
 {

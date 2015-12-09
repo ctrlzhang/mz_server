@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data/developer/work/mz_server/src
+CMAKE_SOURCE_DIR = /data/developer/work/mz_server/mz_server/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/developer/work/mz_server/src
+CMAKE_BINARY_DIR = /data/developer/work/mz_server/mz_server/src
 
 # Include any dependencies generated for this target.
 include CMakeFiles/mz_server.dir/depend.make
@@ -54,17 +54,17 @@ include CMakeFiles/mz_server.dir/flags.make
 
 CMakeFiles/mz_server.dir/mz_server.cpp.o: CMakeFiles/mz_server.dir/flags.make
 CMakeFiles/mz_server.dir/mz_server.cpp.o: mz_server.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /data/developer/work/mz_server/src/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /data/developer/work/mz_server/mz_server/src/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/mz_server.dir/mz_server.cpp.o"
-	/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/mz_server.dir/mz_server.cpp.o -c /data/developer/work/mz_server/src/mz_server.cpp
+	/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/mz_server.dir/mz_server.cpp.o -c /data/developer/work/mz_server/mz_server/src/mz_server.cpp
 
 CMakeFiles/mz_server.dir/mz_server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mz_server.dir/mz_server.cpp.i"
-	/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/developer/work/mz_server/src/mz_server.cpp > CMakeFiles/mz_server.dir/mz_server.cpp.i
+	/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/developer/work/mz_server/mz_server/src/mz_server.cpp > CMakeFiles/mz_server.dir/mz_server.cpp.i
 
 CMakeFiles/mz_server.dir/mz_server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mz_server.dir/mz_server.cpp.s"
-	/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/developer/work/mz_server/src/mz_server.cpp -o CMakeFiles/mz_server.dir/mz_server.cpp.s
+	/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/developer/work/mz_server/mz_server/src/mz_server.cpp -o CMakeFiles/mz_server.dir/mz_server.cpp.s
 
 CMakeFiles/mz_server.dir/mz_server.cpp.o.requires:
 .PHONY : CMakeFiles/mz_server.dir/mz_server.cpp.o.requires
@@ -75,17 +75,40 @@ CMakeFiles/mz_server.dir/mz_server.cpp.o.provides: CMakeFiles/mz_server.dir/mz_s
 
 CMakeFiles/mz_server.dir/mz_server.cpp.o.provides.build: CMakeFiles/mz_server.dir/mz_server.cpp.o
 
+CMakeFiles/mz_server.dir/mz_application.cpp.o: CMakeFiles/mz_server.dir/flags.make
+CMakeFiles/mz_server.dir/mz_application.cpp.o: mz_application.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /data/developer/work/mz_server/mz_server/src/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/mz_server.dir/mz_application.cpp.o"
+	/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/mz_server.dir/mz_application.cpp.o -c /data/developer/work/mz_server/mz_server/src/mz_application.cpp
+
+CMakeFiles/mz_server.dir/mz_application.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mz_server.dir/mz_application.cpp.i"
+	/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/developer/work/mz_server/mz_server/src/mz_application.cpp > CMakeFiles/mz_server.dir/mz_application.cpp.i
+
+CMakeFiles/mz_server.dir/mz_application.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mz_server.dir/mz_application.cpp.s"
+	/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/developer/work/mz_server/mz_server/src/mz_application.cpp -o CMakeFiles/mz_server.dir/mz_application.cpp.s
+
+CMakeFiles/mz_server.dir/mz_application.cpp.o.requires:
+.PHONY : CMakeFiles/mz_server.dir/mz_application.cpp.o.requires
+
+CMakeFiles/mz_server.dir/mz_application.cpp.o.provides: CMakeFiles/mz_server.dir/mz_application.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mz_server.dir/build.make CMakeFiles/mz_server.dir/mz_application.cpp.o.provides.build
+.PHONY : CMakeFiles/mz_server.dir/mz_application.cpp.o.provides
+
+CMakeFiles/mz_server.dir/mz_application.cpp.o.provides.build: CMakeFiles/mz_server.dir/mz_application.cpp.o
+
 # Object files for target mz_server
 mz_server_OBJECTS = \
-"CMakeFiles/mz_server.dir/mz_server.cpp.o"
+"CMakeFiles/mz_server.dir/mz_server.cpp.o" \
+"CMakeFiles/mz_server.dir/mz_application.cpp.o"
 
 # External object files for target mz_server
 mz_server_EXTERNAL_OBJECTS =
 
 mz_server: CMakeFiles/mz_server.dir/mz_server.cpp.o
+mz_server: CMakeFiles/mz_server.dir/mz_application.cpp.o
 mz_server: CMakeFiles/mz_server.dir/build.make
-mz_server: util/libmzutil.a
-mz_server: framework/libmzframework.a
 mz_server: util/libmzutil.a
 mz_server: CMakeFiles/mz_server.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable mz_server"
@@ -96,6 +119,7 @@ CMakeFiles/mz_server.dir/build: mz_server
 .PHONY : CMakeFiles/mz_server.dir/build
 
 CMakeFiles/mz_server.dir/requires: CMakeFiles/mz_server.dir/mz_server.cpp.o.requires
+CMakeFiles/mz_server.dir/requires: CMakeFiles/mz_server.dir/mz_application.cpp.o.requires
 .PHONY : CMakeFiles/mz_server.dir/requires
 
 CMakeFiles/mz_server.dir/clean:
@@ -103,6 +127,6 @@ CMakeFiles/mz_server.dir/clean:
 .PHONY : CMakeFiles/mz_server.dir/clean
 
 CMakeFiles/mz_server.dir/depend:
-	cd /data/developer/work/mz_server/src && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data/developer/work/mz_server/src /data/developer/work/mz_server/src /data/developer/work/mz_server/src /data/developer/work/mz_server/src /data/developer/work/mz_server/src/CMakeFiles/mz_server.dir/DependInfo.cmake --color=$(COLOR)
+	cd /data/developer/work/mz_server/mz_server/src && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data/developer/work/mz_server/mz_server/src /data/developer/work/mz_server/mz_server/src /data/developer/work/mz_server/mz_server/src /data/developer/work/mz_server/mz_server/src /data/developer/work/mz_server/mz_server/src/CMakeFiles/mz_server.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/mz_server.dir/depend
 

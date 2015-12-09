@@ -4,8 +4,11 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/data/developer/work/mz_server/src/util/mz_daemon.cpp" "/data/developer/work/mz_server/src/util/CMakeFiles/mzutil.dir/mz_daemon.cpp.o"
-  "/data/developer/work/mz_server/src/util/mz_option_parser.cpp" "/data/developer/work/mz_server/src/util/CMakeFiles/mzutil.dir/mz_option_parser.cpp.o"
+  "/data/developer/work/mz_server/mz_server/src/util/mz_daemon.cpp" "/data/developer/work/mz_server/mz_server/src/util/CMakeFiles/mzutil.dir/mz_daemon.cpp.o"
+  "/data/developer/work/mz_server/mz_server/src/util/mz_eventloop.cpp" "/data/developer/work/mz_server/mz_server/src/util/CMakeFiles/mzutil.dir/mz_eventloop.cpp.o"
+  "/data/developer/work/mz_server/mz_server/src/util/mz_log.cpp" "/data/developer/work/mz_server/mz_server/src/util/CMakeFiles/mzutil.dir/mz_log.cpp.o"
+  "/data/developer/work/mz_server/mz_server/src/util/mz_option_parser.cpp" "/data/developer/work/mz_server/mz_server/src/util/CMakeFiles/mzutil.dir/mz_option_parser.cpp.o"
+  "/data/developer/work/mz_server/mz_server/src/util/test.cpp" "/data/developer/work/mz_server/mz_server/src/util/CMakeFiles/mzutil.dir/test.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

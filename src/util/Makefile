@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data/developer/work/mz_server/src
+CMAKE_SOURCE_DIR = /data/developer/work/mz_server/mz_server/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/developer/work/mz_server/src
+CMAKE_BINARY_DIR = /data/developer/work/mz_server/mz_server/src
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,14 +72,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /data/developer/work/mz_server/src && $(CMAKE_COMMAND) -E cmake_progress_start /data/developer/work/mz_server/src/CMakeFiles /data/developer/work/mz_server/src/util/CMakeFiles/progress.marks
-	cd /data/developer/work/mz_server/src && $(MAKE) -f CMakeFiles/Makefile2 util/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/developer/work/mz_server/src/CMakeFiles 0
+	cd /data/developer/work/mz_server/mz_server/src && $(CMAKE_COMMAND) -E cmake_progress_start /data/developer/work/mz_server/mz_server/src/CMakeFiles /data/developer/work/mz_server/mz_server/src/util/CMakeFiles/progress.marks
+	cd /data/developer/work/mz_server/mz_server/src && $(MAKE) -f CMakeFiles/Makefile2 util/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/developer/work/mz_server/mz_server/src/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /data/developer/work/mz_server/src && $(MAKE) -f CMakeFiles/Makefile2 util/clean
+	cd /data/developer/work/mz_server/mz_server/src && $(MAKE) -f CMakeFiles/Makefile2 util/clean
 .PHONY : clean
 
 # The main clean target
@@ -88,22 +88,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /data/developer/work/mz_server/src && $(MAKE) -f CMakeFiles/Makefile2 util/preinstall
+	cd /data/developer/work/mz_server/mz_server/src && $(MAKE) -f CMakeFiles/Makefile2 util/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /data/developer/work/mz_server/src && $(MAKE) -f CMakeFiles/Makefile2 util/preinstall
+	cd /data/developer/work/mz_server/mz_server/src && $(MAKE) -f CMakeFiles/Makefile2 util/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /data/developer/work/mz_server/src && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /data/developer/work/mz_server/mz_server/src && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 util/CMakeFiles/mzutil.dir/rule:
-	cd /data/developer/work/mz_server/src && $(MAKE) -f CMakeFiles/Makefile2 util/CMakeFiles/mzutil.dir/rule
+	cd /data/developer/work/mz_server/mz_server/src && $(MAKE) -f CMakeFiles/Makefile2 util/CMakeFiles/mzutil.dir/rule
 .PHONY : util/CMakeFiles/mzutil.dir/rule
 
 # Convenience name for target.
@@ -112,7 +112,7 @@ mzutil: util/CMakeFiles/mzutil.dir/rule
 
 # fast build rule for target.
 mzutil/fast:
-	cd /data/developer/work/mz_server/src && $(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/build
+	cd /data/developer/work/mz_server/mz_server/src && $(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/build
 .PHONY : mzutil/fast
 
 mz_daemon.o: mz_daemon.cpp.o
@@ -120,7 +120,7 @@ mz_daemon.o: mz_daemon.cpp.o
 
 # target to build an object file
 mz_daemon.cpp.o:
-	cd /data/developer/work/mz_server/src && $(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/mz_daemon.cpp.o
+	cd /data/developer/work/mz_server/mz_server/src && $(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/mz_daemon.cpp.o
 .PHONY : mz_daemon.cpp.o
 
 mz_daemon.i: mz_daemon.cpp.i
@@ -128,7 +128,7 @@ mz_daemon.i: mz_daemon.cpp.i
 
 # target to preprocess a source file
 mz_daemon.cpp.i:
-	cd /data/developer/work/mz_server/src && $(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/mz_daemon.cpp.i
+	cd /data/developer/work/mz_server/mz_server/src && $(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/mz_daemon.cpp.i
 .PHONY : mz_daemon.cpp.i
 
 mz_daemon.s: mz_daemon.cpp.s
@@ -136,15 +136,63 @@ mz_daemon.s: mz_daemon.cpp.s
 
 # target to generate assembly for a file
 mz_daemon.cpp.s:
-	cd /data/developer/work/mz_server/src && $(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/mz_daemon.cpp.s
+	cd /data/developer/work/mz_server/mz_server/src && $(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/mz_daemon.cpp.s
 .PHONY : mz_daemon.cpp.s
+
+mz_eventloop.o: mz_eventloop.cpp.o
+.PHONY : mz_eventloop.o
+
+# target to build an object file
+mz_eventloop.cpp.o:
+	cd /data/developer/work/mz_server/mz_server/src && $(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/mz_eventloop.cpp.o
+.PHONY : mz_eventloop.cpp.o
+
+mz_eventloop.i: mz_eventloop.cpp.i
+.PHONY : mz_eventloop.i
+
+# target to preprocess a source file
+mz_eventloop.cpp.i:
+	cd /data/developer/work/mz_server/mz_server/src && $(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/mz_eventloop.cpp.i
+.PHONY : mz_eventloop.cpp.i
+
+mz_eventloop.s: mz_eventloop.cpp.s
+.PHONY : mz_eventloop.s
+
+# target to generate assembly for a file
+mz_eventloop.cpp.s:
+	cd /data/developer/work/mz_server/mz_server/src && $(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/mz_eventloop.cpp.s
+.PHONY : mz_eventloop.cpp.s
+
+mz_log.o: mz_log.cpp.o
+.PHONY : mz_log.o
+
+# target to build an object file
+mz_log.cpp.o:
+	cd /data/developer/work/mz_server/mz_server/src && $(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/mz_log.cpp.o
+.PHONY : mz_log.cpp.o
+
+mz_log.i: mz_log.cpp.i
+.PHONY : mz_log.i
+
+# target to preprocess a source file
+mz_log.cpp.i:
+	cd /data/developer/work/mz_server/mz_server/src && $(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/mz_log.cpp.i
+.PHONY : mz_log.cpp.i
+
+mz_log.s: mz_log.cpp.s
+.PHONY : mz_log.s
+
+# target to generate assembly for a file
+mz_log.cpp.s:
+	cd /data/developer/work/mz_server/mz_server/src && $(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/mz_log.cpp.s
+.PHONY : mz_log.cpp.s
 
 mz_option_parser.o: mz_option_parser.cpp.o
 .PHONY : mz_option_parser.o
 
 # target to build an object file
 mz_option_parser.cpp.o:
-	cd /data/developer/work/mz_server/src && $(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/mz_option_parser.cpp.o
+	cd /data/developer/work/mz_server/mz_server/src && $(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/mz_option_parser.cpp.o
 .PHONY : mz_option_parser.cpp.o
 
 mz_option_parser.i: mz_option_parser.cpp.i
@@ -152,7 +200,7 @@ mz_option_parser.i: mz_option_parser.cpp.i
 
 # target to preprocess a source file
 mz_option_parser.cpp.i:
-	cd /data/developer/work/mz_server/src && $(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/mz_option_parser.cpp.i
+	cd /data/developer/work/mz_server/mz_server/src && $(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/mz_option_parser.cpp.i
 .PHONY : mz_option_parser.cpp.i
 
 mz_option_parser.s: mz_option_parser.cpp.s
@@ -160,8 +208,32 @@ mz_option_parser.s: mz_option_parser.cpp.s
 
 # target to generate assembly for a file
 mz_option_parser.cpp.s:
-	cd /data/developer/work/mz_server/src && $(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/mz_option_parser.cpp.s
+	cd /data/developer/work/mz_server/mz_server/src && $(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/mz_option_parser.cpp.s
 .PHONY : mz_option_parser.cpp.s
+
+test.o: test.cpp.o
+.PHONY : test.o
+
+# target to build an object file
+test.cpp.o:
+	cd /data/developer/work/mz_server/mz_server/src && $(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/test.cpp.o
+.PHONY : test.cpp.o
+
+test.i: test.cpp.i
+.PHONY : test.i
+
+# target to preprocess a source file
+test.cpp.i:
+	cd /data/developer/work/mz_server/mz_server/src && $(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/test.cpp.i
+.PHONY : test.cpp.i
+
+test.s: test.cpp.s
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.cpp.s:
+	cd /data/developer/work/mz_server/mz_server/src && $(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/test.cpp.s
+.PHONY : test.cpp.s
 
 # Help Target
 help:
@@ -175,9 +247,18 @@ help:
 	@echo "... mz_daemon.o"
 	@echo "... mz_daemon.i"
 	@echo "... mz_daemon.s"
+	@echo "... mz_eventloop.o"
+	@echo "... mz_eventloop.i"
+	@echo "... mz_eventloop.s"
+	@echo "... mz_log.o"
+	@echo "... mz_log.i"
+	@echo "... mz_log.s"
 	@echo "... mz_option_parser.o"
 	@echo "... mz_option_parser.i"
 	@echo "... mz_option_parser.s"
+	@echo "... test.o"
+	@echo "... test.i"
+	@echo "... test.s"
 .PHONY : help
 
 
@@ -189,6 +270,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /data/developer/work/mz_server/src && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /data/developer/work/mz_server/mz_server/src && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

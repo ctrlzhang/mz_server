@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data/developer/work/mz_server/src
+CMAKE_SOURCE_DIR = /data/developer/work/mz_server/mz_server/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/developer/work/mz_server/src
+CMAKE_BINARY_DIR = /data/developer/work/mz_server/mz_server/src
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,9 +72,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/developer/work/mz_server/src/CMakeFiles /data/developer/work/mz_server/src/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/developer/work/mz_server/mz_server/src/CMakeFiles /data/developer/work/mz_server/mz_server/src/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/developer/work/mz_server/src/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/developer/work/mz_server/mz_server/src/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -127,18 +127,29 @@ mzutil/fast:
 	$(MAKE) -f util/CMakeFiles/mzutil.dir/build.make util/CMakeFiles/mzutil.dir/build
 .PHONY : mzutil/fast
 
-#=============================================================================
-# Target rules for targets named mzframework
+mz_application.o: mz_application.cpp.o
+.PHONY : mz_application.o
 
-# Build rule for target.
-mzframework: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mzframework
-.PHONY : mzframework
+# target to build an object file
+mz_application.cpp.o:
+	$(MAKE) -f CMakeFiles/mz_server.dir/build.make CMakeFiles/mz_server.dir/mz_application.cpp.o
+.PHONY : mz_application.cpp.o
 
-# fast build rule for target.
-mzframework/fast:
-	$(MAKE) -f framework/CMakeFiles/mzframework.dir/build.make framework/CMakeFiles/mzframework.dir/build
-.PHONY : mzframework/fast
+mz_application.i: mz_application.cpp.i
+.PHONY : mz_application.i
+
+# target to preprocess a source file
+mz_application.cpp.i:
+	$(MAKE) -f CMakeFiles/mz_server.dir/build.make CMakeFiles/mz_server.dir/mz_application.cpp.i
+.PHONY : mz_application.cpp.i
+
+mz_application.s: mz_application.cpp.s
+.PHONY : mz_application.s
+
+# target to generate assembly for a file
+mz_application.cpp.s:
+	$(MAKE) -f CMakeFiles/mz_server.dir/build.make CMakeFiles/mz_server.dir/mz_application.cpp.s
+.PHONY : mz_application.cpp.s
 
 mz_server.o: mz_server.cpp.o
 .PHONY : mz_server.o
@@ -174,7 +185,9 @@ help:
 	@echo "... mz_server"
 	@echo "... rebuild_cache"
 	@echo "... mzutil"
-	@echo "... mzframework"
+	@echo "... mz_application.o"
+	@echo "... mz_application.i"
+	@echo "... mz_application.s"
 	@echo "... mz_server.o"
 	@echo "... mz_server.i"
 	@echo "... mz_server.s"

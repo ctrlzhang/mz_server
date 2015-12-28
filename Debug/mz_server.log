@@ -1,0 +1,29 @@
+﻿生成启动时间为 2015/12/25 11:34:25。
+     1>项目“D:\c++_project\mz_server\mz_server.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt src\cmakefiles\2.8.11\compileridcxx\CMakeCXXCompilerId.cpp src\mz_application.cpp src\mz_server.cpp src\util\mz_daemon.cpp src\util\mz_eventloop.cpp src\util\mz_log.cpp src\util\mz_option_parser.cpp src\util\test.cpp
+         test.cpp
+     1>d:\c++_project\mz_server\src\include\mz_common.h(5): fatal error C1083: 无法打开包括文件: “unistd.h”: No such file or directory
+         mz_option_parser.cpp
+     1>d:\c++_project\mz_server\src\util\../include/mz_option_parser.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>d:\c++_project\mz_server\src\include\mz_common.h(5): fatal error C1083: 无法打开包括文件: “unistd.h”: No such file or directory
+         mz_log.cpp
+     1>d:\c++_project\mz_server\src\include\mz_common.h(5): fatal error C1083: 无法打开包括文件: “unistd.h”: No such file or directory
+         mz_eventloop.cpp
+     1>d:\c++_project\mz_server\src\util\../include/mz_eventloop.h(4): fatal error C1083: 无法打开包括文件: “event2/listener.h”: No such file or directory
+         mz_daemon.cpp
+     1>d:\c++_project\mz_server\src\include\mz_common.h(5): fatal error C1083: 无法打开包括文件: “unistd.h”: No such file or directory
+         mz_server.cpp
+     1>d:\c++_project\mz_server\src\include/mz_application.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>d:\c++_project\mz_server\src\include\mz_common.h(5): fatal error C1083: 无法打开包括文件: “unistd.h”: No such file or directory
+         mz_application.cpp
+     1>src\mz_application.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>d:\c++_project\mz_server\src\include/mz_application.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>d:\c++_project\mz_server\src\include\mz_common.h(5): fatal error C1083: 无法打开包括文件: “unistd.h”: No such file or directory
+         CMakeCXXCompilerId.cpp
+         正在生成代码...
+     1>已完成生成项目“D:\c++_project\mz_server\mz_server.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:01.71

@@ -1,7 +1,7 @@
-﻿生成启动时间为 2015/12/25 11:34:25。
+﻿生成启动时间为 2015/12/28 14:44:13。
      1>项目“D:\c++_project\mz_server\mz_server.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         D:\Program Files\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt src\cmakefiles\2.8.11\compileridcxx\CMakeCXXCompilerId.cpp src\mz_application.cpp src\mz_server.cpp src\util\mz_daemon.cpp src\util\mz_eventloop.cpp src\util\mz_log.cpp src\util\mz_option_parser.cpp src\util\test.cpp
+         D:\Program Files\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt mz_epoll.cpp mz_epoll_server.cpp src\mz_application.cpp src\mz_server.cpp src\util\mz_daemon.cpp src\util\mz_eventloop.cpp src\util\mz_log.cpp src\util\mz_option_parser.cpp src\util\test.cpp
          test.cpp
      1>d:\c++_project\mz_server\src\include\mz_common.h(5): fatal error C1083: 无法打开包括文件: “unistd.h”: No such file or directory
          mz_option_parser.cpp
@@ -20,10 +20,59 @@
      1>src\mz_application.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
      1>d:\c++_project\mz_server\src\include/mz_application.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
      1>d:\c++_project\mz_server\src\include\mz_common.h(5): fatal error C1083: 无法打开包括文件: “unistd.h”: No such file or directory
-         CMakeCXXCompilerId.cpp
+         mz_epoll_server.cpp
+     1>mz_epoll_server.cpp(4): error C2148: 数组的总大小不得超过 0x7fffffff 字节
+     1>mz_epoll_server.cpp(4): error C2512: “epoll_event”: 没有合适的默认构造函数可用
+         mz_epoll_server.cpp(4): note: 参见“epoll_event”的声明
+     1>mz_epoll_server.cpp(7): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>mz_epoll_server.cpp(7): error C2556: “int EpollServer::process(void)”: 重载函数与“void EpollServer::process(void)”只是在返回类型上不同
+         d:\c++_project\mz_server\mz_epoll_server.h(11): note: 参见“EpollServer::process”的声明
+     1>mz_epoll_server.cpp(7): error C2371: “EpollServer::process”: 重定义；不同的基类型
+         d:\c++_project\mz_server\mz_epoll_server.h(11): note: 参见“EpollServer::process”的声明
+     1>mz_epoll_server.cpp(8): error C2065: “epoll_fd”: 未声明的标识符
+     1>mz_epoll_server.cpp(8): error C3861: “epoll_wait”: 找不到标识符
+     1>mz_epoll_server.cpp(11): error C2319: “try”后面必须有复合语句。缺少“{”
+     1>mz_epoll_server.cpp(11): error C2059: 语法错误:“:”
+     1>mz_epoll_server.cpp(12): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+     1>mz_epoll_server.cpp(13): error C2079: “ev”使用未定义的 struct“epoll_event”
+     1>mz_epoll_server.cpp(13): error C2440: “初始化”: 无法从“epoll_event”转换为“int”
+         mz_epoll_server.cpp(13): note: 源或目标有不完整类型
+     1>mz_epoll_server.cpp(14): error C2228: “.data”的左边必须有类/结构/联合
+         mz_epoll_server.cpp(14): note: 类型是“int”
+     1>mz_epoll_server.cpp(14): error C2228: “.fd”的左边必须有类/结构/联合
+     1>mz_epoll_server.cpp(15): error C2065: “listen_fd”: 未声明的标识符
+     1>mz_epoll_server.cpp(17): error C2065: “listen_fd”: 未声明的标识符
+     1>mz_epoll_server.cpp(17): error C3861: “accept”: 找不到标识符
+     1>mz_epoll_server.cpp(21): error C2228: “.events”的左边必须有类/结构/联合
+         mz_epoll_server.cpp(21): note: 类型是“int”
+     1>mz_epoll_server.cpp(21): error C2065: “EPOLLIN”: 未声明的标识符
+     1>mz_epoll_server.cpp(23): error C3861: “recv”: 找不到标识符
+     1>mz_epoll_server.cpp(26): error C2228: “.events”的左边必须有类/结构/联合
+         mz_epoll_server.cpp(26): note: 类型是“int”
+     1>mz_epoll_server.cpp(26): error C2065: “EPOLLOUT”: 未声明的标识符
+     1>mz_epoll_server.cpp(28): error C3861: “send”: 找不到标识符
+     1>mz_epoll_server.cpp(34): error C2059: 语法错误:“catch”
+     1>mz_epoll_server.cpp(35): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+         mz_epoll.cpp
+     1>d:\c++_project\mz_server\mz_epoll.h(15): error C2061: 语法错误: 标识符“uint32_t”
+     1>d:\c++_project\mz_server\mz_epoll.h(18): error C2061: 语法错误: 标识符“uint32_t”
+     1>d:\c++_project\mz_server\mz_epoll.h(21): error C2061: 语法错误: 标识符“uint32_t”
+     1>d:\c++_project\mz_server\mz_epoll.h(34): error C2061: 语法错误: 标识符“uint32_t”
+     1>d:\c++_project\mz_server\mz_epoll.h(30): error C2036: “epoll_event *”: 未知的大小
+     1>mz_epoll.cpp(6): error C2065: “NULL”: 未声明的标识符
+     1>mz_epoll.cpp(12): error C2065: “NULL”: 未声明的标识符
+     1>mz_epoll.cpp(14): warning C4150: 删除指向不完整“epoll_event”类型的指针；没有调用析构函数
+         d:\c++_project\mz_server\mz_epoll.h(27): note: 参见“epoll_event”的声明
+     1>mz_epoll.cpp(15): error C2065: “NULL”: 未声明的标识符
+     1>mz_epoll.cpp(20): error C3861: “close”: 找不到标识符
+     1>mz_epoll.cpp(24): error C2061: 语法错误: 标识符“uint32_t”
+     1>mz_epoll.cpp(26): error C2079: “ev”使用未定义的 struct“epoll_event”
+     1>mz_epoll.cpp(27): error C2228: “.data”的左边必须有类/结构/联合
+         mz_epoll.cpp(27): note: 类型是“int”
+     1>mz_epoll.cpp(27): error C2228: “.u64”的左边必须有类/结构/联合
          正在生成代码...
      1>已完成生成项目“D:\c++_project\mz_server\mz_server.vcxproj”(Build 个目标)的操作 - 失败。
 
 生成失败。
 
-已用时间 00:00:01.71
+已用时间 00:00:00.96

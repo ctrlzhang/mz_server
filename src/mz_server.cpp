@@ -61,4 +61,5 @@ int main(int argc, char* argv[])
     g_mzlog->setLogLevel(LOG_LEVEL_DEBUG);
     g_mzlog->log(LOG_LEVEL_DEBUG, "TEST");
 
+	return 0;
 }

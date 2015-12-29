@@ -42,6 +42,24 @@
     <ClCompile Include="src\util\test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="mz_epoll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mz_epoll_server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mz_exception.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mz_endpoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mz_connection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mz_adapter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\include\cmdline.h">
@@ -78,6 +96,33 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="mz_epoll_server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mz_locker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mz_queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mz_shm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mz_connection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mz_adapter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mz_message_queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mz_exception.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mz_endpoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mz_socket.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -110,9 +110,9 @@ namespace Meizhi
 
 			if (0 == iTask)
 			{
-				//无任务时，休息
+				//无任务时，休息200ms
 				usleep(200000);
-				cout << "usleep 200ms" << endl;
+				SinMZLog::GetInstance()->log(LOG_LEVEL_DEBUG, "usleep 200ms");
 			}
 
 			iTask = 0;

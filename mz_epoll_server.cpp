@@ -77,8 +77,7 @@ void EpollServer::bind(const EndPoint& ep, Socket& s)
 }
 
 
-
-EpollServer::process()
+void EpollServer::process()
 {
 	int eventNum = epoll_wait(epoll_fd, events, 100, -1);
 	for (int i = 0; i < eventNum; i++)

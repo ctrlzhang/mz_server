@@ -97,8 +97,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="mz_adapter.cpp" />
+    <ClCompile Include="mz_connection.cpp" />
+    <ClCompile Include="mz_endpoint.cpp" />
     <ClCompile Include="mz_epoll.cpp" />
     <ClCompile Include="mz_epoll_server.cpp" />
+    <ClCompile Include="mz_exception.cpp" />
     <ClCompile Include="src\cmakefiles\2.8.11\compileridcxx\CMakeCXXCompilerId.cpp" />
     <ClCompile Include="src\cmakefiles\2.8.11\compileridc\CMakeCCompilerId.c" />
     <ClCompile Include="src\mz_application.cpp" />
@@ -110,11 +114,17 @@
     <ClCompile Include="src\util\test.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="mz_adapter.h" />
+    <ClInclude Include="mz_connection.h" />
+    <ClInclude Include="mz_endpoint.h" />
     <ClInclude Include="mz_epoll.h" />
     <ClInclude Include="mz_epoll_server.h" />
+    <ClInclude Include="mz_exception.h" />
     <ClInclude Include="mz_locker.h" />
+    <ClInclude Include="mz_message_queue.h" />
     <ClInclude Include="mz_queue.h" />
     <ClInclude Include="mz_shm.h" />
+    <ClInclude Include="mz_socket.h" />
     <ClInclude Include="src\include\cmdline.h" />
     <ClInclude Include="src\include\mz_application.h" />
     <ClInclude Include="src\include\mz_common.h" />

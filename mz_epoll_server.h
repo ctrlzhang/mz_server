@@ -9,13 +9,14 @@
 #include "mz_exception.h"
 #include "mz_endpoint.h"
 
-//服务端封装
+//服务端逻辑封装
 class EpollServer
 {
 public:
 	EpollServer();
 	~EpollServer();
 
+	//获取监听套接字
 	map<int, BindAdapterPtr> getListeners();
 
 	//record log
@@ -29,6 +30,7 @@ public:
 	//绑定
 	void bind(const EndPoint& ep, Socket& s);
 
+	//业务处理逻辑
 	void process();
 
 private:
